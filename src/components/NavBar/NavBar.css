@@ -5,18 +5,65 @@
  height: 30px;
  padding: 20px;
  display: flex;
+ transition: .5s;
  justify-content: space-between;
- background-color: rgba(10, 10, 10, 0.5);
+ background-color: transparent;
+}
+
+.navbar-change {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ height: 30px;
+ padding: 20px;
+ display: flex;
+ justify-content: space-between;
+ transition: 1s;
+ background-color: rgba(10, 10, 10, 0.6);
+}
+
+
+.navitems{
+ position: fixed;
+ display: flex;
+ top: 25px;
+ left: 300px;
+ gap: 30px;
+ color: white;
+}
+.navitems p{
+ margin-left: 12px;
+ display: flex;
+ cursor: pointer;
+
+}
+.navitems p:hover{
+ opacity: 0.8;
 }
 
 .netflix-logo{
  position: fixed;
  left: 20px;
- width: 100px;
+ width: 120px;
 }
 
-.avatar-logo{
+.button-logo{
  position: fixed;
  right: 20px;
- width: 30px;
+ width: 90px;
+ height: 30px;
+ color: white;
+ outline: none;
+ border: none;
+ font-weight: 700;
+ border-radius: 5px;
+ background-color:rgba(217,31,39,1);
+ transition: .5s;
+ font-family: 'Netflix Sans';
+ cursor: pointer;
+}
+
+.button-logo:hover{
+  color: rgb(189, 185, 185);
+  background-color: #b53030;
 }
