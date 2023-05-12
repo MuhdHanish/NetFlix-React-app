@@ -1,24 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from '../../axios'
+import {imgUrl} from '../../constance/constance'
 import "./RowPost.css"
 
-function RowPost() {
+function RowPost(props) {
+  const [movies, setMovies] = useState([])
+  useEffect(() => {
+   axios.get(props.gener).then((response)=>{
+    setMovies(response.data.results)
+   })
+  })
+
   return (
-    <div className='row'>
-     <h2>Title</h2>
+    <div className='row' >
+      <h2>{props.title}</h2>
      <div className="posters">
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
-      <img className='poster' src="/images/Poster.webp" alt="poster" />
+     {
+        movies.map((obj)=>
+          <img key={obj.id} className={props.isSmall ?'smallPoster':'poster' } src={`${imgUrl+obj.backdrop_path}`} alt="poster" />
+        )
+      }
      </div>
     </div>
   )
