@@ -1,11 +1,11 @@
 .row{
- margin-left: 20px;
+ margin-left: 10px;
  color: #fff;
+ margin-bottom: 20px;
 }
 
 .posters{
  display: flex;
- padding: 20px;
  overflow-x: scroll;
  overflow-y: hidden;
 }
@@ -14,21 +14,44 @@
  display: none;
 }
 
+
 .poster{
- max-height: 250px;
+ max-height: 160px;
+ transition: .25s;
  margin-right: 10px;
  cursor: pointer;
+ border: white 1px solid;
 }
 
 .smallPoster{
  max-height: 150px;
+ transition: .25s;
  margin-right: 10px;
  cursor: pointer;
+ border: white 1px solid;
 }
 
 .poster:hover{
- transform: scale(1.08);
+ transform: scale(1.06);
 }
+
 .smallPoster:hover{
- transform: scale(1.08);
+ transform: scale(1.06);
+}
+
+.youtube-box {
+ display: flex;
+ justify-content: center; 
+ align-items: center; 
+}
+
+.youtube-container {
+ margin-top: 20px;
+ height: 390px;
+ width: 800px;
+ border: 1px solid #ffffff;
+}
+
+.youtube-container .youtube-player {
+ border-radius: 5px;
 }

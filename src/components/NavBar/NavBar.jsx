@@ -24,11 +24,8 @@ function NavBar() {
         <p>Home</p>
         <p>Tv Shows</p>
         <p>Movies</p>
-        <p>News&Populr</p>
-        <p>My List</p>
-        <p>Browse by language</p>
       </div>
-      <button className="button-logo">Get Started</button>
+      <button className="button-logo">GET STARTED</button>
     </div>
   );
 }

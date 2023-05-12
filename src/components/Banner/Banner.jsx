@@ -12,7 +12,7 @@ function Banner() {
       const result = response.data.results
       const random = Math.floor(Math.random() * result.length)
       setMovie(result[random])
-    })
+    }).catch((err)=>console.log(err))
   }, [])
 
   let title

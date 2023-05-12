@@ -22,13 +22,12 @@
  background-color: rgba(10, 10, 10, 0.6);
 }
 
-
 .navitems{
  position: fixed;
  display: flex;
- top: 25px;
- left: 300px;
- gap: 30px;
+ top: 26px;
+ left: 170px;
+ gap: 10px;
  color: white;
 }
 .navitems p{
@@ -50,13 +49,11 @@
 .button-logo{
  position: fixed;
  right: 20px;
- width: 90px;
- height: 30px;
+ width: 105px;
+ height: 35px;
  color: white;
- outline: none;
- border: none;
+ border: white 1px solid;
  font-weight: 700;
- border-radius: 5px;
  background-color:rgba(217,31,39,1);
  transition: .5s;
  font-family: 'Netflix Sans';
