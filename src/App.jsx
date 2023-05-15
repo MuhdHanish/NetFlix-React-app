@@ -3,19 +3,25 @@ import "./App.css"
 import NavBar from "./components/NavBar/NavBar";
 import Banner from "./components/Banner/Banner";
 import RowPost from "./components/RowPost/RowPost";
-import {originals,action,Adventure,romance,comedy,horror} from "../src/components/RowPost/url"
+import {originals,action,Adventure,romance,comedy,horror} from "../src/components/RowPost/url";
+
+const rows = [
+  { title: 'NETFLIX ORIGINALS', url: originals },
+  { title: 'ACTION', url: action },
+  { title: 'ADVENTURE', url: Adventure },
+  { title: 'ROMANCE', url: romance },
+  { title: 'HORROR', url: horror },
+  { title: 'COMEDY', url: comedy },
+];
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <Banner/>
-      <RowPost title='NETFLIX ORIGINALS' url={originals}/>
-      <RowPost title='ACTION' isSmall url={action}/>
-      <RowPost title='ADVENTURE'  url={Adventure}/>
-      <RowPost title='ROMANCE' isSmall url={romance}/>
-      <RowPost title='HORROR'  url={horror}/>
-      <RowPost title='COMEDY' isSmall url={comedy}/>
+      {rows.map((row, index) => (
+        <RowPost key={index} title={row.title} url={row.url} isSmall={index % 2 !== 0} />
+      ))}
     </div>
   );
 }

@@ -20,7 +20,7 @@
  transition: .25s;
  margin-right: 10px;
  cursor: pointer;
- border: white 1px solid;
+
 }
 
 .smallPoster{
@@ -28,7 +28,7 @@
  transition: .25s;
  margin-right: 10px;
  cursor: pointer;
- border: white 1px solid;
+
 }
 
 .poster:hover{
