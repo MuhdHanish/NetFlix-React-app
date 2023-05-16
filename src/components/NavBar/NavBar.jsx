@@ -17,7 +17,7 @@ function NavBar() {
     <div className={colorChange?"navbar-change":"navbar"} id="navbar">
       <img
         className="netflix-logo"
-        src="/images/Netflix-logo.webp"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png"
         alt="Netflix-Logo"
       />
       <div className="navitems">
