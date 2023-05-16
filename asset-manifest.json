@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NetFlix-React-app/static/css/main.4401fa1d.css",
+    "main.js": "/NetFlix-React-app/static/js/main.722fcb85.js",
+    "index.html": "/NetFlix-React-app/index.html",
+    "main.4401fa1d.css.map": "/NetFlix-React-app/static/css/main.4401fa1d.css.map",
+    "main.722fcb85.js.map": "/NetFlix-React-app/static/js/main.722fcb85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4401fa1d.css",
+    "static/js/main.722fcb85.js"
+  ]
+}
