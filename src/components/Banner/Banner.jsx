@@ -39,7 +39,6 @@ function Banner() {
         {description}
         </h1>
       </div>
-      <div className="fade_bottom"></div>
     </div>
   );
 }

@@ -3,12 +3,24 @@
  height: 100vh;
  color: white;
  margin-bottom: 20px;
+ background-image:  linear-gradient(180deg,transparent,rgba(1,1,1,0.1),#111);
 }
 
 .content{
  padding-top: 200px;
  height: 190px;
  padding-left: 30px;
+}
+
+.banner::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-image: linear-gradient(180deg,transparent,rgba(1,1,1,0.1),#111);
+ z-index: 1;
 }
 
 .title{
@@ -51,5 +63,5 @@
 
 .fade_bottom{
  height:  16.7rem;
- background-image: linear-gradient(180deg,transparent,rgba(1,1,1,0.1),#111);
+ 
 }
