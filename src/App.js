@@ -3,7 +3,7 @@ import "./App.css"
 import NavBar from "./components/NavBar/NavBar";
 import Banner from "./components/Banner/Banner";
 import RowPost from "./components/RowPost/RowPost";
-import {originals,action,Adventure,romance,comedy,horror} from "../src/components/RowPost/url";
+import {originals,action,Adventure,romance,comedy,horror} from "./components/RowPost/url";
 
 const rows = [
   { title: 'NETFLIX ORIGINALS', url: originals },
